@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proiect- Echipa</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css"> 
+ <script src="culoare.js"></script>
+</head>
+<body>
+<header id="principal">
+  <div id="antet"></div>
+  <!--aici meniu orizontal-->
+  <nav id="meniu">
+    <ul>
+        <li><a href="index.html">INTRODUCERE</a></li>
+        <li><a href="grile.html">GRILE</a></li>
+        <li class="dropdown">
+            <a href="istoriaMedicinei.html" class="dropbtn">ISTORIA MEDICINEI</a>
+            <div class="dropdown-content">
+                <a href="istoriaMedicinei.html#inceputuri">Inceputuri</a>
+                <a href="istoriaMedicinei.html#antichitatea">Antichitatea</a>
+                <a href="istoriaMedicinei.html#perioada-medievala">Perioada medievala</a>
+                <a href="istoriaMedicinei.html#renasterea">Renasterea</a>
+                <a href="istoriaMedicinei.html#anatomia-in-romania">Anatomia in Romania</a>
+            </div>
+        <li><a href="galerie.html">GALERIE</a></li>
+        <li><a href="anatomie.html">ANATOMIE</a></li>
+        <li><a href="echipa.html">ECHIPA</a></li>
+        <li><a href="contacte.html">CONTACT</a></li>	
+        <li><a href="login.html">LOGARE</a></li>
+    </ul>
+</nav>
+  <!--gata meniu orizontal-->
+</header>
+<main class="intrare">
+  <br>
+  <div id="dataOra"></div>
+  <script src="data.js"></script>
+  <h1>Echipa</h1><br> 
+  <div class="echipa-item">
+    <img src="imagini/an.jpg" alt="Poza Echipa" width="200" height="260">
+    <div class="echipa-info">
+      <h4 id="element">Vasile Daria-Gabriela</h4>
+      <p id="culoare">Sunt studenta la FMI
+      <br>Gasiti <a href="CV_AV.pdf">aici</a> CV-ul meu.</p>
+      <div class="ekg"></div>
+   
+      </div>
+  </div>
+  <script src="culoaremod.js"></script>
+  <button onclick="schimbareCuloareAleatoare()">Schimbă culoarea</button>
+</main>
+<footer>
+  <p>Sfarsitul Paginii Echipa</p>
+</footer>
+</body>
+</html>

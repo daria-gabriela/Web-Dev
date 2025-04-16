@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css"> 
+<title>Login/Logout</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  form {
+    margin: 20px auto;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  .logout-btn {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+
+<header id="principal">
+
+    <div id="antet"></div>
+    
+       <!--aici meniu orizontal-->
+       <nav id="meniu">
+          <ul>
+              <li><a href="index.html">INTRODUCERE</a></li>
+              <li><a href="grile.html">GRILE</a></li>
+              <li class="dropdown">
+                  <a href="istoriaMedicinei.html" class="dropbtn">ISTORIA MEDICINEI</a>
+                  <div class="dropdown-content">
+                      <a href="istoriaMedicinei.html#inceputuri">Inceputuri</a>
+                      <a href="istoriaMedicinei.html#antichitatea">Antichitatea</a>
+                      <a href="istoriaMedicinei.html#perioada-medievala">Perioada medievala</a>
+                      <a href="istoriaMedicinei.html#renasterea">Renasterea</a>
+                      <a href="istoriaMedicinei.html#anatomia-in-romania">Anatomia in Romania</a>
+                  </div>
+              <li><a href="galerie.html">GALERIE</a></li>
+              <li><a href="anatomie.html">ANATOMIE</a></li>
+              <li><a href="echipa.html">ECHIPA</a></li>
+              <li><a href="contacte.html">CONTACT</a></li>	
+              <li><a href="login.html">LOGARE</a></li>
+          </ul>
+      </nav>
+     <!--gata meniu orizontal-->
+    </header>
+    <main class="intrare">
+      <br>	
+        <div id="dataOra"></div>
+        <script src="data.js"></script>
+        <div id="login-form">
+          <h1>Logare</h1>
+          <br>
+          <form id="login">
+            <input type="text" id="email" placeholder="Adresă de email" required>
+            <input type="password" id="password" placeholder="Parolă" required>
+            <input type="submit" value="Logare">
+          </form>
+        </div>
+        <div id="logout-form">
+            <h1>Bine ai venit, <span id="user"></span>!</h1>
+            <button id="logout" class="logout-btn" >Ieșire din cont</button>
+          </div>
+    </main>        
+
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Proiect- Contacte</title>
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
+   <link rel="stylesheet" href="style.css"> 
+   <script src="data.js"></script>
+   <script src="validare.js" ></script> 
+</head>
+<body>
+
+<header id="principal">
+
+<div id="antet"></div>
+
+   <!--aici meniu orizontal-->
+   <nav id="meniu">
+   <ul>
+       <li><a href="index.html">INTRODUCERE</a></li>
+       <li><a href="grile.html">GRILE</a></li>
+       <li class="dropdown">
+           <a href="istoriaMedicinei.html" class="dropbtn">ISTORIA MEDICINEI</a>
+           <div class="dropdown-content">
+               <a href="istoriaMedicinei.html#inceputuri">Inceputuri</a>
+               <a href="istoriaMedicinei.html#antichitatea">Antichitatea</a>
+               <a href="istoriaMedicinei.html#perioada-medievala">Perioada medievala</a>
+               <a href="istoriaMedicinei.html#renasterea">Renasterea</a>
+               <a href="istoriaMedicinei.html#anatomia-in-romania">Anatomia in Romania</a>
+           </div>
+       <li><a href="galerie.html">GALERIE</a></li>
+       <li><a href="anatomie.html">ANATOMIE</a></li>
+       <li><a href="echipa.html">ECHIPA</a></li>
+       <li><a href="contacte.html">CONTACT</a></li>	
+       <li><a href="login.html">LOGARE</a></li>
+   </ul>
+</nav>
+ <!--gata meniu orizontal-->
+</header>
+	<main class="intrare">
+		<br>	
+      <div id="dataOra"></div>
+      <script src="data.js"></script>
+      <h1>Pentru mai multe informatii sau sugestii:</h1><br>		
+			  <h5>
+            <form name="contactForm" onsubmit="return validateForm()">
+                 Nume: <input type="text" name="username"> <br><br>
+                 Email: <input type="text" name="email"> <br><br>
+                 Comments:<br><br>
+                 <textarea name="COMMENTS" rows="10" cols="26" wrap="hard"></textarea>
+                 <input name="redirect" type="hidden" value="index.html">
+                 <input name="NEXT_URL" type="hidden" value="index.html">
+                 <br>
+                 <input type="submit" value="Send">
+                 <input type="reset" value="Clear">
+              </form>
+            </h5>
+               
+<br><br>
+<script src="adugarestergere.js"></script>
+   </main>
+<footer>
+   <p>Sfarsitul Paginii Contact</p>
+</footer>
+<script src="computedstyle.js"></script>
+</body>
+</html>
